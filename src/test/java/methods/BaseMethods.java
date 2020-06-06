@@ -14,7 +14,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class BaseMethods {
+public class BaseMethods{
     public static WebDriver driver;
 
     public BaseMethods() {
@@ -48,7 +48,7 @@ public class BaseMethods {
     @Description("İlgili elemente tıklanmasını,eğer tıklanamazsa uyarı çıkması sağlanır.")
     protected void clickElement(WebElement element) {
         try {
-            waitSeconds(1);
+            waitSeconds(2);
             element.click();
             logMessage(element.getText() + " elementine tıklandı.");
         } catch (Exception e) {

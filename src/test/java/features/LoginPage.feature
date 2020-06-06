@@ -6,5 +6,5 @@ Feature: Website Login
     And user enters phone number "05349199918"
     And user enters password "qwerty1"
     And user click login button
-    Then user go to Homepage "https://test.iddaa.com"
-    And driver close
+    And user go to Homepage "https://test.iddaa.com/"
+    Then driver close
